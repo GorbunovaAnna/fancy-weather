@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fancy-weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="control-block">
+            <div class="settings">
+                <button class="refresh-bg"></button>
+                <select class="language" name="">
+                    <option selected value="english">en</option>
+                    <option value="russian">ru</option>
+                    <option value="be">be</option>
+                </select>
+                <div>
+                    <button class="btn-f degrees ">°F</button>
+                    <button class="btn-c degrees active">°С</button>
+
+                </div>
+            </div>
+            <div class="search">
+                <input type="text" name="" placeholder="Search city or ZIP">
+                <button>search</button>
+            </div>
+        </div>
+        <div class="basis-block">
+            <div class="weather">
+                <div class="locality">
+                    <span class="place">Minsk, Belarus</span> 
+                    <span class="date">Mon 28 October  17:23</span>
+                </div>
+                <div class="weather-today">
+                    <div class="temperature-now">
+                        <p>10</p>
+                    </div>
+                    <div class="icon-weather">
+                        <img src="./icons/tucha.png" alt="icon">
+                    </div>
+                    <div class="summaru-weather">
+                        <p>overcast</p>
+                        <p>Feels like: 7°</p>
+                        <p>Wind: 2 m/s </p>
+                        <p>Humidity: 83%</p>
+                    </div>
+                </div>
+                <div class="three-day">
+                    <div class="column">
+                        <div class="day">Tuesday</div>
+                        <div class="wrap">
+                            <div class="temp">7°</div>
+                            <div class="icon-min">
+                                <img src="./icons/tuchi.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="day">Wednesday</div>
+                        <div class="wrap">
+                            <div class="temp">6°</div>
+                            <div class="icon-min">
+                                <img src="./icons/tuchi.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="day">Thursday</div>
+                        <div class="wrap">
+                            <div class="temp">3°</div>
+                            <div class="icon-min">
+                                <img src="./icons/tuchi.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="geolocation">
+                <div class="map">
+                    <img src="./images/google.jpg" alt="map">
+                </div>
+                <div class="coordinates">
+                    <p class="latitude">Latitude: 53°54'</p>
+                    <p class="longitude">Longitude: 27°34'</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
